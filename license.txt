@@ -1,0 +1,11 @@
+Copyright (c) 2026 Teik
+
+All Rights Reserved.
+
+This website and its code are the property of the creator. 
+No part of this website, including HTML, CSS, JavaScript, or content, 
+may be copied, modified, distributed, or used for any purpose 
+without explicit permission from the creator.
+
+Note: This website was partially generated with AI tools 
+and finalized by the creator for learning and practice purposes.
