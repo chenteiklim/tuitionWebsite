@@ -1,0 +1,272 @@
+/* ==========================
+   Base / Global Styles
+========================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons (reusable) */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;   /* px */
+  font-size: 16px;      /* px */
+  font-weight: bold;
+  border-radius: 5px;   /* px */
+  background-color: #ffdd59;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+  color: black;
+}
+
+/* ==========================
+   Navbar
+========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c7be5;
+  color: white;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffdd59;
+}
+
+/* ==========================
+   Hero / Attention Section
+========================== */
+.Attention {
+  background-color: #71b7e6;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.Attention h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Attention p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   Features Section
+========================== */
+.features {
+  text-align: center;
+  padding: 64px 20px;
+  background-color: #f9f9f9;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+}
+
+/* ==========================
+   Contact Page 
+========================== */
+.contact-info,
+.contact-form {
+  max-width: 960px;
+  margin: 0 auto 32px;
+  padding: 64px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 160px;
+  align-self: center;
+}
+
+/* ==========================
+   About Page
+========================== */
+.about {
+  max-width: 900px;
+  margin: 64px auto;
+  padding: 0 20px;
+  color: #333;
+  line-height: 27px;
+}
+
+.about h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: #2c7be5;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.about ul {
+  list-style: none;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.about li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* ==========================
+   Courses Section
+========================== */
+.courses {
+  max-width: 1000px;
+  margin: 64px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #2c7be5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.course-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.course-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.course-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.course-card .btn {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+footer {
+  background-color: #e9ecef;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #555;
+}
